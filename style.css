@@ -1,18 +1,67 @@
-*, *::after {
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
 
-* {
-	margin: 0;
+*, *::after { box-sizing: border-box; }
+
+* { margin: 0;
 	padding: 0;
 	font: inherit;
+	font-family: Manrope;
+}
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--neon-green: hsl(150, 100%, 66%);
+	--dark-grayish-blue: hsl(217, 19%, 24%);
 }
 
 body {
 	max-height: 100vh;
+	background-color: hsl(218, 23%, 16%);
 }
 
 img {
 	display: block;
 	max-width: 100%;
+}
+
+.container {
+	background-color: var(--dark-grayish-blue);
+	width: 600px;
+	height: 350px;
+	border-radius: 20px;
+	margin: 100px auto 0px;
+	padding: 30px 30px 0px 30px;
+	text-align: center;
+}
+
+.container * {
+	padding-bottom: 30px;
+}
+
+.container h1 {
+	font-size: 20px;
+	color: var(--neon-green);
+}
+
+.container p {
+	color: var(--white);
+	font-size: 28px;
+}
+
+.container p::after {
+	content: url(images/pattern-divider-desktop.svg);
+	display: block;
+}
+
+.container button {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: var(--neon-green);
+}
+
+.container button img {
+	position: relative;
+	top: 20px;
+	left: 20px;
 }
