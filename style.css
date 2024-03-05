@@ -60,6 +60,7 @@ img, svg {
 	height: 70px;
 	border-radius: 50%;
 	background-color: var(--neon-green);
+	cursor: pointer;
 }
 
 .container button img {
