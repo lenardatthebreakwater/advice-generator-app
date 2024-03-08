@@ -27,7 +27,7 @@ Users should be able to:
 - Generate a new piece of advice by clicking the dice icon
 
 ### Screenshot
-![preview](https://github.com/lenardatthebreakwater/advice-generator-app/assets/142602437/c0e335f9-a6a6-4b6d-8032-dc942fef3245)
+![Capture](https://github.com/lenardatthebreakwater/advice-generator-app/assets/142602437/dd40dc39-1f86-4f69-aaa2-d8b3829193f7)
 
 ### Links
 
