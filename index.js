@@ -3,9 +3,9 @@ let adviceID = document.querySelector('#adviceID')
 let advice = document.querySelector('#advice')
 let loader = document.querySelector('#loader')
 
-function displayAdvice(requestBody) {
-    adviceID.innerText = `Advice #${requestBody.slip.id}`
-    advice.innerText = `"${requestBody.slip.advice}"`
+function displayAdvice(responseBody) {
+    adviceID.innerText = `Advice #${responseBody.slip.id}`
+    advice.innerText = `"${responseBody.slip.advice}"`
     loader.style.display = 'none'
     advice.style.display = 'block'
 }
@@ -14,10 +14,10 @@ getAdviceBtn.addEventListener('click', () => {
     loader.style.display = 'block'
     advice.style.display = 'none'
     fetch('https://api.adviceslip.com/advice')
-    .then((request) =>
-        request.json()
+    .then((response) =>
+        response.json()
     )
-    .then((requestBody) => (
-        displayAdvice(requestBody)
+    .then((responseBody) => (
+        displayAdvice(responseBody)
     ))
 })
